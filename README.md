@@ -3,9 +3,11 @@ A programming language. Stands for "Brahma Language"
 
 It doesn't use a file, instead, it uses your shell.
 
-To build it, you neeed `pyinstaller`, and mark the `build` file executable.
+To build it, you neeed `pyinstaller`, and mark the `build1` file executable.
 
 Then, execute like a shell script.
+
+`build1` is used instead of `build` to prevent conflict.
 # Help
 ## Usage
 `APP` needs to be replaced as `./app` or `python app.py`.
