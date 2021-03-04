@@ -84,3 +84,7 @@ loop
 loop
 [Snipped]
 ```
+### Divide
+Same as `ta`, but use `div` instead.
+### Multiply
+Same as `div`, but use `mpy` instead.
