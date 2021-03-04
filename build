@@ -1,0 +1,5 @@
+#!/bin/bash
+pyinstaller --onefile app.py
+cp dist/app .
+mv app blang
+chmod +x blang
