@@ -45,7 +45,7 @@ Just specify the file.
 APP ram /dev/null
 ```
 will output nothing.
-### try to get input forever
+### Try to get input forever
 ```
 APP inp
 ```
@@ -71,7 +71,7 @@ no
 ```
 ### `if !=`
 Just like `if is`, but use `if not` instead.
-### say `loop` forever
+### Say `loop` forever
 ```
 APP lop
 ```
