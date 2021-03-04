@@ -30,6 +30,20 @@ elif sys.argv[1] == "add":
     except:
         print("ERROR: Unknown hard error")
 
+elif sys.argv[1] == "mpy":
+    try:
+        print(int(sys.argv[2]) * int(sys.argv[3]))
+
+    except:
+        print("ERROR: Unknown hard error")
+
+elif sys.argv[1] == "div":
+    try:
+        print(int(sys.argv[2]) / int(sys.argv[3]))
+
+    except:
+        print("ERROR: Unknown hard error")
+
 elif sys.argv[1] == "ta":
     try:
         print(int(sys.argv[2]) - int(sys.argv[3]))
