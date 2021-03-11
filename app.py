@@ -6,22 +6,24 @@ def nothing():
 
 if sys.argv[1] == "say":
     try:
-        print(sys.argv[2])
+        print(sys.argv[2], end=" ")
 
     except:
         nothing()
 
     try:
-        print(sys.argv[3])
+        print(sys.argv[3], end=" ")
 
     except:
         nothing()
 
     try:
-        print(sys.argv[4])
+        print(sys.argv[4], end=" ")
 
     except:
         nothing()
+
+    print()
 
 elif sys.argv[1] == "add":
     try:
