@@ -20,8 +20,7 @@ APP say Hello World
 ```
 will output:
 ```
-Hello
-World
+Hello World
 ```
 ### Addition
 Do not use a `+`.
