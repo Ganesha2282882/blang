@@ -1,7 +1,11 @@
 # blang
 A programming language. Stands for "Brahma Language"
 
-It doesn't use a file, instead, it uses your shell.
+It now uses a file!
+Run:
+`APP SCRIPT`
+instead of:
+`APP CODEINSTRING`
 
 To build it, you neeed `pyinstaller`, and mark the `build1` file executable.
 
@@ -10,13 +14,12 @@ Then, execute like a shell script.
 `build1` is used instead of `build` to prevent conflict.
 # Help
 ## Usage
-`APP` needs to be replaced as `./app` or `python app.py`.
 
 If you supply 0 arguments, an error will occur.
 ### Print something to the screen
 You may only say 3 words.
 ```
-APP say Hello World
+say Hello World
 ```
 will output:
 ```
@@ -25,7 +28,7 @@ Hello World
 ### Addition
 Do not use a `+`.
 ```
-APP add 6 4
+add 6 4
 ```
 will output:
 ```
@@ -34,7 +37,7 @@ will output:
 ### Subtraction
 Same with Addition, but use `ta` instead of `add`.
 ```
-APP ta 7 4
+ta 7 4
 ```
 will output:
 ```
@@ -43,12 +46,12 @@ will output:
 ### Load file into RAM
 Just specify the file.
 ```
-APP ram /dev/null
+ram /dev/null
 ```
 will output nothing.
 ### Try to get input forever
 ```
-APP inp
+inp
 ```
 will output:
 ```
@@ -57,14 +60,14 @@ will output:
 ### `if ==`
 Similar to Python's `if ==`, but you can't specify what it will do. It will say `yes` or `no`.
 ```
-APP if "hello" is "hello"
+if "hello" is "hello"
 ```
 will output:
 ```
 yes
 ```
 ```
-APP if "hello" is "world"
+if "hello" is "world"
 ```
 will output:
 ```
@@ -74,7 +77,7 @@ no
 Just like `if is`, but use `if not` instead.
 ### Say `loop` forever
 ```
-APP lop
+lop
 ```
 will output:
 ```
