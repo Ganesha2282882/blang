@@ -103,5 +103,9 @@ for line in lines:
         while True:
             print("loop")
 
+    elif line[0] == "\n":
+        del line[0]
+        nothing()
+
     else:
         print("ERROR:", line[0], "is not a valid function.")
