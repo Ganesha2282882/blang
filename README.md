@@ -2,8 +2,10 @@
 A programming language. Stands for "Brahma Language"
 
 It now uses a file!
+
 Run:
 `APP SCRIPT`
+
 instead of:
 `APP CODEINSTRING`
 
