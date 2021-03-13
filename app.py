@@ -1,91 +1,107 @@
-import os
 import sys
+
+codef = open(sys.argv[1], "r+t")
+code = codef.read()
+codef.close()
+
+lines = code.split("\n")
 
 def nothing():
     pass
 
-if sys.argv[1] == "say":
-    try:
-        print(sys.argv[2], end=" ")
+for line in lines:
+    line = line.split(" ")
+    if line[0] == "say":
+        del line[0]
+        try:
+            print(line[0], end=" ")
 
-    except:
-        nothing()
+        except:
+            nothing()
 
-    try:
-        print(sys.argv[3], end=" ")
+        try:
+            print(line[1], end=" ")
 
-    except:
-        nothing()
+        except:
+            nothing()
 
-    try:
-        print(sys.argv[4], end=" ")
+        try:
+            print(line[2], end=" ")
 
-    except:
-        nothing()
+        except:
+            nothing()
 
-    print()
+        print()
 
-elif sys.argv[1] == "add":
-    try:
-        print(int(sys.argv[2]) + int(sys.argv[3]))
+    elif line[0] == "add":
+        del line[0]
+        try:
+            print(int(line[0]) + int(line[1]))
 
-    except:
-        print("ERROR: Unknown hard error")
+        except:
+            print("ERROR: Unknown hard error")
 
-elif sys.argv[1] == "mpy":
-    try:
-        print(int(sys.argv[2]) * int(sys.argv[3]))
+    elif line[0] == "mpy":
+        del line[0]
+        try:
+            print(int(line[0]) * int(line[1]))
 
-    except:
-        print("ERROR: Unknown hard error")
+        except:
+            print("ERROR: Unknown hard error")
 
-elif sys.argv[1] == "div":
-    try:
-        print(int(sys.argv[2]) / int(sys.argv[3]))
+    elif line[0] == "div":
+        del line[0]
+        try:
+            print(int(line[0]) / int(line[1]))
 
-    except:
-        print("ERROR: Unknown hard error")
+        except:
+            print("ERROR: Unknown hard error")
 
-elif sys.argv[1] == "ta":
-    try:
-        print(int(sys.argv[2]) - int(sys.argv[3]))
+    elif line[0] == "ta":
+        del line[0]
+        try:
+            print(int(line[0]) - int(line[1]))
 
-    except:
-        print("ERROR: Unknown hard error")
+        except:
+            print("ERROR: Unknown hard error")
 
-elif sys.argv[1] == "ram":
-    try:
-        open(sys.argv[2], "rb").close()
+    elif line[0] == "ram":
+        del line[0]
+        try:
+            open(line[0], "rb").close()
 
-    except:
-        print("ERROR: Unknown hard error")
+        except:
+            print("ERROR: Unknown hard error")
 
-elif sys.argv[1] == "inp":
-    while True:
-        input("% ")
+    elif line[0] == "inp":
+        del line[0]
+        while True:
+            input("% ")
 
-elif sys.argv[1] == "if":
-    try:
-        if sys.argv[3] == "is":
-            if eval(sys.argv[2]) == eval(sys.argv[4]):
-               print("yes")
+    elif line[0] == "if":
+        del line[0]
+        try:
+            if line[1] == "is":
+                if eval(line[0]) == eval(line[2]):
+                    print("yes")
 
-            else:
-                print("no")
+                else:
+                    print("no")
 
-        elif sys.argv[3] == "not":
-            if eval(sys.argv[2]) != eval(sys.argv[4]):
-                print("yes")
+            elif line[1] == "not":
+                if eval(line[0]) != eval(line[2]):
+                    print("yes")
 
-            else:
-                print("no")
+                else:
+                    print("no")
 
-    except:
-        print("ERROR: Unknown hard error")
+        except:
+            print("ERROR: Unknown hard error")
 
-elif sys.argv[1] == "lop":
-    while True:
-        print("loop")
+    elif line[0] == "lop":
+        del line[0]
+        while True:
+            print("loop")
 
-else:
-    print("ERROR:", sys.argv[1], "is not a valid function.")
+    else:
+        print("ERROR:", line[0], "is not a valid function.")
