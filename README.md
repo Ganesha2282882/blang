@@ -1,7 +1,7 @@
 # blang
 A programming language. Stands for "Brahma Language"
 
-It now uses a file!
+###
 
 Run:
 `APP SCRIPT`
