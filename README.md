@@ -92,3 +92,8 @@ loop
 Same as `ta`, but use `div` instead.
 ### Multiply
 Same as `div`, but use `mpy` instead.
+### Comments
+Use the space bar.
+```
+ This is a comment.
+```
