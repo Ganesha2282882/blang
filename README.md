@@ -62,14 +62,14 @@ will output:
 ### `if ==`
 Similar to Python's `if ==`, but you can't specify what it will do. It will say `yes` or `no`.
 ```
-if "hello" is "hello"
+if hello is hello
 ```
 will output:
 ```
 yes
 ```
 ```
-if "hello" is "world"
+if hello is world
 ```
 will output:
 ```
