@@ -13,23 +13,8 @@ for line in lines:
     line = line.split(" ")
     if line[0] == "say":
         del line[0]
-        try:
-            print(line[0], end=" ")
-
-        except:
-            nothing()
-
-        try:
-            print(line[1], end=" ")
-
-        except:
-            nothing()
-
-        try:
-            print(line[2], end=" ")
-
-        except:
-            nothing()
+        for x in line[0:]:
+            print(x, end=" ")
 
         print()
 
