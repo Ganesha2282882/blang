@@ -19,7 +19,7 @@ Then, execute like a shell script.
 
 If you supply 0 arguments, an error will occur.
 ### Print something to the screen
-You may only say 3 words.
+__New:__ You can now say more than 3 words!
 ```
 say Hello World
 ```
