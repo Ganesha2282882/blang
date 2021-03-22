@@ -67,14 +67,14 @@ for line in lines:
         del line[0]
         try:
             if line[1] == "is":
-                if eval(line[0]) == eval(line[2]):
+                if str(line[0]) == str(line[2]):
                     print("yes")
 
                 else:
                     print("no")
 
             elif line[1] == "not":
-                if eval(line[0]) != eval(line[2]):
+                if str(line[0]) != str(line[2]):
                     print("yes")
 
                 else:
