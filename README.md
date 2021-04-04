@@ -62,7 +62,7 @@ will output:
 ### `if ==`
 Similar to Python's `if ==`, but you can't specify what it will do. It will say `yes` or `no`.
 ```
-if hello is hello
+is hello is hello
 ```
 will output:
 ```
@@ -76,7 +76,7 @@ will output:
 no
 ```
 ### `if !=`
-Just like `if is`, but use `if not` instead.
+Just like `is is`, but use `is not` instead.
 ### Say `loop` forever
 ```
 lop
