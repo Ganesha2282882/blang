@@ -1,14 +1,6 @@
 # blang
 A programming language. Stands for "Brahma Language"
 
-### It now uses a file!
-
-Run:
-`APP SCRIPT`
-
-instead of:
-`APP CODEINSTRING`
-
 To build it, you neeed `pyinstaller`, and mark the `build1` file executable.
 
 Then, execute like a shell script.
