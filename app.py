@@ -63,7 +63,7 @@ for line in lines:
         while True:
             input("% ")
 
-    elif line[0] == "if":
+    elif line[0] == "is":
         del line[0]
         try:
             if line[1] == "is":
