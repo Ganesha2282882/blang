@@ -92,6 +92,10 @@ for line in lines:
         del line[0]
         nothing()
 
+    elif line[0] == "\r\n":
+        del line[0]
+        nothing()
+
     elif line[0] == "":
         del line[0]
         nothing()
