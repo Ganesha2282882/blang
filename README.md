@@ -10,4 +10,4 @@ and then running the Python script with `hworld.blang` as the argument.
 
 At this time, modules are not supported in blang, as of 4/6/2021.
 
-Help is available in the [Wiki](https://github.com/Ganesha2282882/blang/wiki/Usage)
+Help is available in the [Wiki](https://github.com/Ganesha2282882/blang/wiki/Usage).
