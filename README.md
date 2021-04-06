@@ -7,4 +7,4 @@ Then, execute like a shell script.
 
 `build1` is used instead of `build` to prevent conflict.
 # Help
-Go to the Wiki.
+Go to the (Wiki)[https://github.com/Ganesha2282882/blang/wiki].
