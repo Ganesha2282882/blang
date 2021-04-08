@@ -15,6 +15,7 @@ for line in lines:
         del line[0]
         for x in line[0:]:
             print(x, end=" ")
+            [ijohj y u yuku  uogiu i y uyguiyn9yg7 
 
         print()
 
