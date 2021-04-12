@@ -1,5 +1,4 @@
 #!/bin/bash
-pyinstaller --onefile app.py
-cp dist/app .
-mv app blang
+echo '#!/bin/python3' > blang
+cat app.py >> blang
 chmod +x blang
