@@ -96,6 +96,10 @@ for line in lines:
     elif line[0] == "":
         del line[0]
         nothing()
+        
+    elif line[0] == " ":
+        del line[0]
+        nothing()
 
     else:
         print("ERROR:", line[0], "is not a valid function.")
