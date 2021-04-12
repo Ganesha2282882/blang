@@ -10,6 +10,7 @@ def nothing():
     pass
 
 for line in lines:
+    line.replace("\r", r"")
     line = line.split(" ")
     if line[0] == "say":
         del line[0]
@@ -89,10 +90,6 @@ for line in lines:
             print("loop")
 
     elif line[0] == "\n":
-        del line[0]
-        nothing()
-
-    elif line[0] == "\r\n":
         del line[0]
         nothing()
 
