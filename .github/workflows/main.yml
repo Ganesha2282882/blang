@@ -29,7 +29,6 @@ jobs:
       - name: Install deps
         run: |
           sudo apt install python3 python3-minimal python-is-python3 python3-pip
-          sudo pip3 install pyinstaller
         
       - name: Compile blang
         run: |
