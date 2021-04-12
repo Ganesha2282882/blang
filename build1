@@ -1,5 +1,8 @@
 #!/bin/bash
 pyinstaller --onefile app.py
+pyinstaller --onefile bpkgman.py
 cp dist/app .
+cp dist/bpkgman .
 mv app blang
 chmod +x blang
+chmod +x bpkgman
