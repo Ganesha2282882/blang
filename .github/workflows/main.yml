@@ -42,6 +42,6 @@ jobs:
 
       - name: Run test script with CRLF
         run: |
-          printf "say Hello, World!\r\nsay Hello from Windows newline!" > test.blang
+          printf "say Hello, World!\r\nsay Hello from Windows newline!\r\n" > test.blang
           ./blang test.blang
           
