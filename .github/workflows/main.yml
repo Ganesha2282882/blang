@@ -40,3 +40,9 @@ jobs:
         run: |
           echo "say Hello, World!" > test.blang
           ./blang test.blang
+
+      - name: Run test script with CRLF
+        run: |
+          printf "say Hello, World!\r\nsay Hello from Windows newline!" > test.blang
+          ./blang test.blang
+          
