@@ -63,7 +63,7 @@ def readprog(prog):
         elif line[0] == "inp":
             del line[0]
             while True:
-                input("{} ".format(line[1]))
+                input("{} ".format(line[0]))
 
         elif line[0] == "if":
             del line[0]
