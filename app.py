@@ -104,3 +104,5 @@ def readprog(prog):
 
         else:
             print("ERROR:", line[0], "is not a valid function.")
+
+readprog(lines)
