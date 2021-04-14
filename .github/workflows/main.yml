@@ -37,11 +37,20 @@ jobs:
 
       - name: Run test script
         run: |
-          echo "say Hello, World!" > test.blang
+          printf "say Hello, World!\nif Windows is binbows say what is going on with life\nif Windows not binbows say correct\nif Windows is Windows say duh\nif Windows is binbows say nope" > test.blang
+          ./blang test.blang
+          
+      - name: Run test script with end newline
+        run: |
+          printf "say Hello, World!\nif Windows is binbows say what is going on with life\nif Windows not binbows say correct\nif Windows is Windows say duh\nif Windows is binbows say nope\n" > test.blang
           ./blang test.blang
 
       - name: Run test script with CRLF
         run: |
-          printf "say Hello, World!\r\nsay Hello from Windows newline!\r\n" > test.blang
+          printf "say Hello, World!\r\nif Windows is binbows say what is going on with life\r\nif Windows not binbows say correct\r\nif Windows is Windows say duh\r\nif Windows is binbows say nope" > test.blang
           ./blang test.blang
           
+      - name: Run test script with CRLF and end newline
+        run: |
+          printf "say Hello, World!\r\nif Windows is binbows say what is going on with life\r\nif Windows not binbows say correct\r\nif Windows is Windows say duh\r\nif Windows is binbows say nope\r\n" > test.blang
+          ./blang test.blang
