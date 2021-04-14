@@ -71,6 +71,7 @@ def readprog(prog):
                 if line[1] == "is":
                     if str(line[0]) == str(line[2]):
                         print(line[3:])
+                        print(" ".join(line[3:]))
                         readprog(" ".join(line[3:]))
 
                     else:
