@@ -70,14 +70,14 @@ def readprog(prog):
             try:
                 if line[1] == "is":
                     if str(line[0]) == str(line[2]):
-                        readprog("".join(line[3:]))
+                        readprog(" ".join(line[3:]))
 
                     else:
                         print("no")
 
                 elif line[1] == "not":
                     if str(line[0]) != str(line[2]):
-                        readprog("".join(line[3:]))
+                        readprog(" ".join(line[3:]))
 
                     else:
                         print("no")
@@ -88,7 +88,7 @@ def readprog(prog):
         elif line[0] == "lop":
             del line[0]
             while True:
-                readprog("".join(line[1:]))
+                readprog(" ".join(line[1:]))
 
         elif line[0] == "\n":
             del line[0]
