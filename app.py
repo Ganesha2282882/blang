@@ -88,7 +88,7 @@ def readprog(prog):
         elif line[0] == "lop":
             del line[0]
             while True:
-                readprog([" ".join(line[1:])])
+                readprog([" ".join(line[0:])])
 
         elif line[0] == "\n":
             del line[0]
