@@ -1,4 +1,5 @@
 import sys
+import os
 
 codef = open(sys.argv[1], "r+t")
 code = codef.read()
@@ -101,6 +102,11 @@ def readprog(prog):
         elif line[0] == " ":
             del line[0]
             nothing()
+        
+        elif line[0] == "scl":
+            del line[0]
+            systemcmd = " ".join(line[0:])
+            os.system(systemcmd)
 
         else:
             print("ERROR:", line[0], "is not a valid function.")
