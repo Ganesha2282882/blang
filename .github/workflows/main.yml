@@ -38,4 +38,4 @@ jobs:
 
       - name: Run test scripts in test suite
         run:
-          for i in test/*.blang; do ./blang $i; done
+          for i in `find tests`; do ./blang $i; done
