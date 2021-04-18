@@ -41,4 +41,5 @@ jobs:
           cd tests
           for i in $(ls); do
             ../blang $i
+          done
           
