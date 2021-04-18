@@ -40,6 +40,6 @@ jobs:
         run: |
           cd tests
           for i in $(ls); do
-            ../blang $i
+            ../blang "$i"
           done
           
