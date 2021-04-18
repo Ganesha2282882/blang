@@ -36,10 +36,8 @@ jobs:
           chmod +x build1
           ./build1
 
-      - name: Run random test script
+      - name: Run test script
         run: |
-          cd tests
-          for i in $(ls); do
-            ../blang "$i"
-          done
+          echo "say Never gonna give you up" > a.blang
+          blang a.blang
           
