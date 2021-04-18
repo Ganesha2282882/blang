@@ -1,7 +1,7 @@
 # blang
 An object oriented programming language. Stands for "Brahma Language"
 
-~~To build it, you neeed `pyinstaller`, and~~ mark the `build1` file executable.
+To build it, ~~you neeed `pyinstaller`, and~~mark the `build1` file executable.
 
 Then, execute like a shell script.
 
