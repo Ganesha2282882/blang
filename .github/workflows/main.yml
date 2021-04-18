@@ -36,6 +36,9 @@ jobs:
           chmod +x build1
           ./build1
 
-      - name: Run test scripts in test suite
-        run:
-          for i in `find tests`; do ./blang $i; done
+      - name: Run random test script
+        run: |
+          cd tests
+          for i in $(ls); do
+            ../blang $i
+          
