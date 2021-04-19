@@ -26,7 +26,7 @@ def readprog(prog):
                 print()
                 
             else:
-                 for x in line[0:]:
+                for x in line[0:]:
                     print(x, end=" ")
 
                 print()
