@@ -105,7 +105,7 @@ def readprog(prog):
         
         elif line[0] == "scl":
             del line[0]
-            if line[0][1] == ":" and line[0][-1] == ":":
+            if line[0][0] == ":" and line[0][-1] == ":":
                 systemcmd = varlist[line[0][1]]
                 os.system(systemcmd)
                 
