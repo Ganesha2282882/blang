@@ -114,7 +114,7 @@ def readprog(prog):
         
         elif line[0] == "var":
             del line[0]
-            varlist[":{}:".format(line[0])] = "{}".format(line[1])
+            varlist[":{}:".format(line[0])] = "{}".format(" ".join(line[1:]))
 
         else:
             print("ERROR:", line[0], "is not a valid function.")
