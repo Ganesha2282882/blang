@@ -108,9 +108,11 @@ def readprog(prog):
             if line[0][0] == ":" and line[0][-1] == ":":
                 systemcmd = varlist[":{}:".format(line[0][1:-1])]
                 os.system(systemcmd)
+                continue
                 
-            systemcmd = " ".join(line[0:])
-            os.system(systemcmd)
+            else:
+                systemcmd = " ".join(line[0:])
+                os.system(systemcmd)
         
         elif line[0] == "var":
             del line[0]
