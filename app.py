@@ -14,7 +14,7 @@ def nothing():
     pass
 
 def readprog(prog):
-    for line i1][rog: + )
+    for line in prog:
         line.replace("\r", r"")
         line = line.split(" ")
         if line[0] == "say":
