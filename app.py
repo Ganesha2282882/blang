@@ -35,14 +35,14 @@ def readprog(prog):
             del line[0]
             if line[0][0] == ":" and line[0][-1] == ":":
                  try:
-                    print(varlist[":{}:".format(line[0][1:-1])] + varlist[":{}:".format(line[1][1:-1])])
+                    print(float(varlist[":{}:".format(line[0][1:-1])]) + float(varlist[":{}:".format(line[1][1:-1])]))
                  
                  except:
                     print("ERROR: Unknown hard error")
                  
             else:
                 try:
-                    print(line[0] + line[1])
+                    print(float(line[0]) + float(line[1]))
 
                 except:
                     print("ERROR: Unknown hard error")
@@ -51,14 +51,14 @@ def readprog(prog):
             del line[0]
             if line[0][0] == ":" and line[0][-1] == ":":
                 try:
-                    print(varlist[":{}:".format(line[0][1:-1])] * varlist[":{}:".format(line[1][1:-1])])
+                    print(float(varlist[":{}:".format(line[0][1:-1])]) * float(varlist[":{}:".format(line[1][1:-1])]))
                 
                 except:
                     print("ERROR: Unknown hard error")
                     
             else:
                 try:
-                    print(line[0] * line[1])
+                    print(float(line[0]) * float(line[1]))
 
                 except:
                     print("ERROR: Unknown hard error")
@@ -67,13 +67,13 @@ def readprog(prog):
             del line[0]
             if line[0][0] == ":" and line[0][-1] == ":":
                 try:
-                    print(varlist[":{}:".format(line[0][1:-1])] / varlist[":{}:".format(line[1][1:-1])])
+                    print(float(varlist[":{}:".format(line[0][1:-1])]) / float(varlist[":{}:".format(line[1][1:-1])]))
                 
                 except:
                     print("ERROR: Unknown hard error")
             else:
                 try:
-                    print(line[0] / line[1])
+                    print(float(line[0]) / float(line[1]))
 
                 except:
                     print("ERROR: Unknown hard error")
@@ -82,13 +82,13 @@ def readprog(prog):
             del line[0]
             if line[0][0] == ":" and line[0][-1] == ":":
                 try:
-                    print(varlist[":{}:".format(line[0][1:-1])] - varlist[":{}:".format(line[1][1:-1])])
+                    print(float(varlist[":{}:".format(line[0][1:-1])]) - float(varlist[":{}:".format(line[1][1:-1])]))
                 except:
                     print("ERROR: Unknown hard error")
                     
                 else:
                     try:
-                        print(int(line[0]) - int(line[1]))
+                        print(float(line[0]) - float(line[1]))
 
                     except:
                         print("ERROR: Unknown hard error")
