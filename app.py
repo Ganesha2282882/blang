@@ -105,10 +105,19 @@ def readprog(prog):
         
         elif line[0] == "scl":
             del line[0]
+            if line[0][1] == ":" and line[0][-1] == ":":
+                systemcmd = varlist[line[0][1]]
+                os.system(systemcmd)
+                
             systemcmd = " ".join(line[0:])
             os.system(systemcmd)
+        
+        elif line[0] == "var":
+            del line[0]
+            varlist[":{}:".format(line[0])] = "{}".format(line[1])
 
         else:
             print("ERROR:", line[0], "is not a valid function.")
 
+varlist = {}
 readprog(lines)
