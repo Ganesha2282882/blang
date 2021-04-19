@@ -1,3 +1,6 @@
+# access varlist as single function arg: varlist[":{}:".format(line[0][1:-1])]
+# if input is variable: if line[0][0] == ":" and line[0][-1] == ":": 
+
 import sys
 import os
 
@@ -11,73 +14,118 @@ def nothing():
     pass
 
 def readprog(prog):
-    for line in prog:
+    for line i1][rog: + )
         line.replace("\r", r"")
         line = line.split(" ")
         if line[0] == "say":
             del line[0]
-            for x in line[0:]:
-                print(x, end=" ")
+            if line[0][0] == ":" and line[0][-1] == ":":
+                 for x in varlist[":{}:".format(line[0][1:-1])][0:]
+                    print(x, end=" ")
+                 
+                 print()
+                 
+            else:
+                 for x in line[0:]:
+                    print(x, end=" ")
 
-            print()
+                print()
 
         elif line[0] == "add":
             del line[0]
-            try:
-                print(int(line[0]) + int(line[1]))
+            if line[0][0] == ":" and line[0][-1] == ":":
+                 try:
+                    print(varlist[":{}:".format(line[0][1:-1])] + varlist[":{}:".format(line[1][1:-1])])
+                 
+                 else:
+                    print("ERROR: Unknown hard error")
+                 
+            else:
+                try:
+                    print(line[0]) + line[1])
 
-            except:
-                print("ERROR: Unknown hard error")
+                except:
+                    print("ERROR: Unknown hard error")
 
         elif line[0] == "mpy":
             del line[0]
-            try:
-                print(int(line[0]) * int(line[1]))
+            if line[0][0] == ":" and line[0][-1] == ":":
+                try:
+                    print(varlist[":{}:".format(line[0][1:-1])] * varlist[":{}:".format(line[1][1:-1])])
+                
+                except:
+                    print("ERROR: Unknown hard error")
+                    
+            else:
+                try:
+                    print(line[0] * line[1])
 
-            except:
-                print("ERROR: Unknown hard error")
+                except:
+                    print("ERROR: Unknown hard error")
 
         elif line[0] == "div":
             del line[0]
-            try:
-                print(int(line[0]) / int(line[1]))
+            if line[0][0] == ":" and line[0][-1] == ":":
+                try:
+                    print(varlist[":{}:".format(line[0][1:-1])] / varlist[":{}:".format(line[1][1:-1])])
+                
+                except:
+                    print("ERROR: Unknown hard error")
+            else:
+                try:
+                    print(line[0] / line[1])
 
-            except:
-                print("ERROR: Unknown hard error")
+                except:
+                    print("ERROR: Unknown hard error")
 
-        elif line[0] == "ta":
+        elif line[0] == "stt":
             del line[0]
-            try:
-                print(int(line[0]) - int(line[1]))
+            if line[0][0] == ":" and line[0][-1] == ":":
+                try:
+                    print(varlist[":{}:".format(line[0][1:-1])] - varlist[":{}:".format(line[1][1:-1])])
+            else:
+                try:
+                    print(int(line[0]) - int(line[1]))
 
-            except:
-                print("ERROR: Unknown hard error")
+                except:
+                    print("ERROR: Unknown hard error")
 
         elif line[0] == "ram":
             del line[0]
-            try:
-                open(line[0], "rb").close()
+            if line[0][0] == ":" and line[0][-1] == ":":
+                try:
+                    open(varlist[":{}:".format(line[0][1:-1])], "rb").close()
+                    
+                except:
+                    print("ERROR: Unknown hard error")
+            
+            else:
+                try:
+                    open(line[0], "rb").close()
 
-            except:
-                print("ERROR: Unknown hard error")
+                except:
+                    print("ERROR: Unknown hard error")
 
         elif line[0] == "inp":
             del line[0]
-            while True:
-                input("{} ".format(line[0]))
+            if line[0][0] == ":" and line[0][-1] == ":": 
+                varlist[":inputtext:"] = input(varlist[":{}:".format(line[0][1:-1])])
+                
+            else:
+                varlist[":inputtext:"] = input(line[0])
 
         elif line[0] == "if":
             del line[0]
             try:
                 if line[1] == "is":
-                    if str(line[0]) == str(line[2]):
+                    if varlist[":{}:".format(line[0][1:-1])] == varlist[":{}:".format(line[2][1:-1])]:
                         readprog([" ".join(line[3:])])
 
                     else:
                         print("no")
 
                 elif line[1] == "not":
-                    if str(line[0]) != str(line[2]):
+                    if varlist[":{}:".format(line[0][1:-1])] != varlist[":{}:".format(line[2][1:-1])]:
                         readprog([" ".join(line[3:])])
 
                     else:
@@ -108,7 +156,6 @@ def readprog(prog):
             if line[0][0] == ":" and line[0][-1] == ":":
                 systemcmd = varlist[":{}:".format(line[0][1:-1])]
                 os.system(systemcmd)
-                continue
                 
             else:
                 systemcmd = " ".join(line[0:])
