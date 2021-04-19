@@ -83,10 +83,11 @@ def readprog(prog):
             if line[0][0] == ":" and line[0][-1] == ":":
                 try:
                     print(float(varlist[":{}:".format(line[0][1:-1])]) - float(varlist[":{}:".format(line[1][1:-1])]))
+             
                 except:
                     print("ERROR: Unknown hard error")
                     
-                else:
+            else:
                     try:
                         print(float(line[0]) - float(line[1]))
 
