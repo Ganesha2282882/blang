@@ -42,7 +42,7 @@ def readprog(prog):
                  
             else:
                 try:
-                    print(line[0]) + line[1])
+                    print(line[0] + line[1])
 
                 except:
                     print("ERROR: Unknown hard error")
