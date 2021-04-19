@@ -21,7 +21,7 @@ def readprog(prog):
             del line[0]
             if line[0][0] == ":" and line[0][-1] == ":":
                 for x in varlist[":{}:".format(line[0][1:-1])][0:]:
-                    print(x, end=" ")
+                    print(x, end="")
                  
                 print()
                 
