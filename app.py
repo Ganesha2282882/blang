@@ -37,7 +37,7 @@ def readprog(prog):
                  try:
                     print(varlist[":{}:".format(line[0][1:-1])] + varlist[":{}:".format(line[1][1:-1])])
                  
-                 else:
+                 except:
                     print("ERROR: Unknown hard error")
                  
             else:
