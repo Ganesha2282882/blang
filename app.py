@@ -113,10 +113,10 @@ def readprog(prog):
         elif line[0] == "inp":
             del line[0]
             if line[0][0] == ":" and line[0][-1] == ":": 
-                varlist[":inputtext:"] = input("{}\t".format(varlist[":{}:".format(line[0][1:-1])]))
+                varlist[":inputtext:"] = input("{} ".format(varlist[":{}:".format(line[0][1:-1])]))
                 
             else:
-                varlist[":inputtext:"] = input(line[0])
+                varlist[":inputtext:"] = input(line[0], " ")
 
         elif line[0] == "if":
             del line[0]
