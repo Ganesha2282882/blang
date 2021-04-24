@@ -2,6 +2,7 @@
 
 mode con COLS=55 LINES=30
 title blang Uninstaller
+cd %userprofile%\Desktop
 
 echo Uninstalling blang.
 rd c:\blang /s /q > nul
