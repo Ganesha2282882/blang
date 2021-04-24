@@ -11,7 +11,7 @@ cd runtime
 powershell "iwr https://raw.githubusercontent.com/Ganesha2282882/blang/main/app.py -OutFile blang.py" > nul
 cd ..
 ren runtime blang
-move blang C:\
+move blang C:\ > nul
 echo Installation complete.
 echo You just have to run blang.py
 echo with 'python' in front of it like this:
