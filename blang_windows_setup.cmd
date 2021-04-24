@@ -2,6 +2,7 @@
 
 title blang Setup
 mode con COLS=55 LINES=30
+cd %userprofile%\Desktop
 
 echo Installing blang. This might take at most 5 minutes.
 powershell "iwr https://www.python.org/ftp/python/3.8.0/python-3.8.0-embed-win32.zip -OutFile runtime.zip" > nul
