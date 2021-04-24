@@ -6,7 +6,8 @@ title blang Uninstaller
 echo Uninstalling blang.
 rd c:\blang /s /q
 
-echo Sad to see you go! Maybe next time you would try out blang?
+echo Sad to see you go! Maybe next time you would try out
+echo blang?
 echo Anyway, it's completely uninstalled.
 echo blang scripts in there are moved to a
 echo folder on your desktop 'blang Scripts'.
