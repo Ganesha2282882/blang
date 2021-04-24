@@ -5,9 +5,11 @@ An object oriented programming language. Stands for "Brahma Language"
 To build it, mark the `build1` file executable.
 
 Then, execute like a shell script.
-## For Windows:
-There is actually an installer. See [this guide](https://github.com/Ganesha2282882/blang/raw/main/download_win_setup.mp4) to use the installer. It will install to the path `C:\blang`. But, before you do anything from the guide, open the file `blang_windows_setup.cmd`.
 
 `build1` is used instead of `build` to prevent conflict.
+## For Windows:
+There is actually an installer. See [this guide](https://github.com/Ganesha2282882/blang/raw/main/download_win_setup.mp4) to use the installer. It will install to the path `C:\blang`. But, before you do anything from the guide, open the file `blang_windows_setup.cmd`.
+### Uninstalling
+Follow the steps as the guide above, but do it with `blang_windows_uninstaller.cmd`.
 # Help
 Go to the [Wiki](https://github.com/Ganesha2282882/blang/wiki).
