@@ -173,6 +173,13 @@ def readprog(prog):
             funtxt = varlist[":{}:".format(line[0][1:-1])]
             funtxt = funtxt.replace(";", "\n")
             funtxt = funtxt.split("\n")
+            for x in funtxt:
+                x = x.split(" ")
+                del x[0]
+                for y in x:
+                    for z in range(len(line[1:])):
+                        varlist[":arg{}:".format(z)] = y
+                        
             readprog(funtxt)
             
             
