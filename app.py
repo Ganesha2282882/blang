@@ -169,6 +169,13 @@ def readprog(prog):
             del line[0]
             varlist[":{}:".format(line[0])] = "{}".format(" ".join(line[1:]))
 
+        elif line[0][0] == ":" and line[0][-1] == ":":
+            funtxt = varlist[":{}:".format(line[0][1:-1])]
+            funtxt = funtxt.replace(";", "\n")
+            funtxt = funtxt.split("\n")
+            readprog(funtxt)
+            
+            
         else:
             print("ERROR:", line[0], "is not a valid function.")
 
