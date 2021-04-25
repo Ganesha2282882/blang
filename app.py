@@ -178,7 +178,7 @@ def readprog(prog):
                 del x[0]
                 for y in x:
                     for z in range(len(line[1:])):
-                        global varlist, y, x, z
+                        global y, x, z
                         varlist[":arg{}:".format(z)] = y
                         
             readprog(funtxt)
