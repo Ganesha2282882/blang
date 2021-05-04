@@ -8,6 +8,7 @@ codef = open(sys.argv[1], "r+t")
 code = codef.read()
 codef.close()
 
+blang_module_dir = "blang_modules"
 lines = code.split("\n")
 
 def nothing():
@@ -176,6 +177,12 @@ def readprog(prog):
                         
             readprog(funtxt)
             
+        elif line[0] == "mod":
+            del line[0]
+            modfile = "{}/{}.blang".format(blang_module_dir, line[0])
+            modfileobj = open(modfile, "rt")
+            readprog(modfileobj.read()) 
+            modfileobj.close()
             
         else:
             print("ERROR:", line[0], "is not a valid function.")
