@@ -181,7 +181,7 @@ def readprog(prog):
             del line[0]
             modfile = "{}/{}.blang".format(blang_module_dir, line[0])
             modfileobj = open(modfile, "rt")
-            readprog(modfileobj.read()) 
+            readprog(modfileobj.read().split("\n")) 
             modfileobj.close()
             
         else:
