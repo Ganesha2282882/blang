@@ -11,6 +11,7 @@ There is actually a pacstall package.
 ```
 #### Install blang
 ```bash
+# apt install git -y
 # pacstall -I blang-git
 ```
 Be aware, answer `n` to the prompt for removing build depends. If you answer `y`, it will remove core system components.
