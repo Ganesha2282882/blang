@@ -13,7 +13,7 @@ There is actually a pacstall package.
 ```bash
 # pacstall -I blang-git
 ```
-Be aware, answer `n` to the prompt for removing build depends.
+Be aware, answer `n` to the prompt for removing build depends. If you answer `y`, it will remove core system components.
 ### Other distros/macOS
 To build it, mark the `build1` file executable.
 
