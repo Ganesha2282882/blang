@@ -1,7 +1,19 @@
 # blang
 An object oriented programming language. Stands for "Brahma Language"
 # Installing
-## For Linux
+## For Linux/macOS
+### Ubuntu
+There is actually a pacstall package.
+#### Getting pacstall
+```bash
+# bash -c "$(wget -q https://git.io/JfHDM -O -)"
+# apt install stow -y
+```
+#### Install blang
+```bash
+# pacstall -I blang-git
+```
+### Other distros/macOS
 To build it, mark the `build1` file executable.
 
 Then, execute like a shell script.
