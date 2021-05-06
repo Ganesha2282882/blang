@@ -13,6 +13,7 @@ There is actually a pacstall package.
 ```bash
 # pacstall -I blang-git
 ```
+Be aware, answer `n` to the prompt for removing build depends.
 ### Other distros/macOS
 To build it, mark the `build1` file executable.
 
