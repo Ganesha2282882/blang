@@ -10,7 +10,7 @@ and then running the Python script with `hworld.blang` as the argument.
 
 Also, blang handles errors differently. It's not like Python where it figures it out before running it and throwing an error, no. blang runs the code before the error, errors out on the line with an error, and then runs the next line like usual. 
 
-Help is available in the [Wiki](https://github.com/Ganesha2282882/blang/wiki/Usage) or down below:
+Help is available in the [Wiki](https://github.com/Ganesha2282882/blang/wiki/Usage).
 <!-- Messenger Chat Plugin Code -->
 <div id="fb-root"></div>
 <script>
