@@ -1,5 +1,5 @@
 <!-- Nav bar -->
-[Home](#) | [Copyright](copyright) | [Twitter](https://twitter.com/blangCodeLang) | [Facebook](https://www.facebook.com/Blang-101951965407426)
+[Home](#) | [Copyright](Copyright) | [Twitter](https://twitter.com/blangCodeLang) | [Facebook](https://www.facebook.com/Blang-101951965407426)
 
 blang is a programming language that is very minimal and does not need a lot of resources. It's built on top of Python and can soon be used in your IDE.
 
