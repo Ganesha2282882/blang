@@ -15,7 +15,7 @@ Also, blang handles errors differently. It's not like Python where it figures it
 
 Help is available in the [Wiki](https://github.com/Ganesha2282882/blang/wiki/Usage).
 
-Can't use that on this site? Email `blangCodeLang@outlook.com`.
+Can't use the chat on this site? Email `blangCodeLang@outlook.com`.
 <!-- Messenger Chat Plugin Code -->
 <div id="fb-root"></div>
 <script>
