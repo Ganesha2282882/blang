@@ -12,3 +12,7 @@ a {
 pre, code, samp {
   font-family: "Space Mono";
 }
+
+.navbar {
+  z-index: 1000;
+}
