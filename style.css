@@ -4,3 +4,11 @@ body {
   color: white;
   font-family: "Nunito Sans";
 }
+
+a {
+  color: gray;
+}
+
+pre, code, samp {
+  font-family: "Space Mono";
+}
