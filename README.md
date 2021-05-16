@@ -1,5 +1,7 @@
+<head>
 <!-- Headers -->
-
+<meta name="description" content="Free Web tutorials">
+</head>
 <!-- Nav bar -->
 [Home](index.html) | [Copyright](Copyright) | [Twitter](https://twitter.com/blangCodeLang) | [Facebook](https://www.facebook.com/Blang-101951965407426)
 
