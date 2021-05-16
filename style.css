@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Space+Mono&display=swap');
 body {
   background-color: #169f6f;
   color: white;
+  font-family: "Nunito Sans";
 }
