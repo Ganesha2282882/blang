@@ -1,5 +1,4 @@
 <!-- Headers -->
-<meta name="google-site-verification" content="eT33F55QoGIn7P8QgpytsSb4u4ZppYc_mrJy3Q7GDII" />
 
 <!-- Nav bar -->
 [Home](index.html) | [Copyright](Copyright) | [Twitter](https://twitter.com/blangCodeLang) | [Facebook](https://www.facebook.com/Blang-101951965407426)
