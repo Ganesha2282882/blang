@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>blang | Copyright</title>
+  <link rel="stylesheet" href="../style.css" type="text/css">
+  <link rel="shortcut icon" href="https://styles.redditmedia.com/t5_455l65/styles/communityIcon_9o9xaonzlxw61.png" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index">Home</a>&nbsp;<a href="copyright">Copyright</a>&nbsp;<a href="https://twitter.com/blangCodeLang">Twitter</a>&nbsp;<a href="https://www.facebook.com/Blang-101951965407426">Facebook</a>
+    </div>
+    <h1>Copyright</h1>
+    <p>
+      blang is open source and licensed under LGPL 2.1.
+      
+      The logo is public domain, but PHP should not rant on the fact that it looks similar. It's that way by design.
+      
+      The word <code>blang</code> can be used freely.
+    </p>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v10.0'
+          });
+        };
 
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution="biz_inbox"
+        page_id="101951965407426">
+      </div>
+  </body>
+</html>
