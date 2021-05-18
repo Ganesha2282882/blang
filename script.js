@@ -1,9 +1,3 @@
 const joinNewsletter = () => {
-  let modalBox = document.getElementById("newsletterBox");
-  modalBox.open = ""
-}
-
-const unjoinNewsletter = () => {
-  let modalBox = document.getElementById("newsletterBox");
-  delete modalBox.open
+  alert("Want to join our weekly newsletter? Unfortunately, our tools can't send emails. You can, however, follow blang on Twitter. You will also get other useful updates and even more!")
 }
