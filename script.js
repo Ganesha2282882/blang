@@ -3,6 +3,6 @@ const joinNewsletter = () => {
 }
 
 let i = 0;
-for (i++; i < 1000) {
+for (i++; i < 1000;) {
   console.log("This panel is not a blang console. This is a JavaScript console. JavaScript and blang are different.");
 }
