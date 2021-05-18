@@ -4,13 +4,13 @@ body {
   color: white;
   font-family: "Nunito Sans";
 }
---acolor: lightgray;
+
 a {
-  color: --acolor;
+  color: lightgray;
 }
 
 #nws {
-  color: --acolor;
+  color: lightgray;
 }
 
 pre, code, samp {
