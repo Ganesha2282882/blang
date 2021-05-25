@@ -1,5 +1,5 @@
 # blang
-An object oriented programming language. Stands for "Brahma Language"
+An object oriented programming language. Stands for "Brahma Language".
 # Installing
 ## For Linux/macOS
 ### Linux
