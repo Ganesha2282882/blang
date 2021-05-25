@@ -2,22 +2,16 @@
 An object oriented programming language. Stands for "Brahma Language"
 # Installing
 ## For Linux/macOS
-<!--
-### Ubuntu
-There is actually a pacstall package.
-#### Getting pacstall
+### Linux
+#### Install `lpkg`
 ```bash
-# bash -c "$(wget -q https://git.io/JfHDM -O -)"
-# apt install stow -y
+$ curl -Ls https://git.io/JGebe | sudo bash
 ```
 #### Install blang
 ```bash
-# apt install git -y
-# pacstall -I blang-git
+$ sudo lpkg -E blang
 ```
-Be aware, answer `n` to the prompt for removing build depends. If you answer `y`, it will remove core system components.
-### Other distros/macOS
--->
+### macOS
 To build it, mark the `build1` file executable.
 
 Then, execute like a shell script.
