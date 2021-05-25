@@ -17,6 +17,6 @@ To build it, mark the `build1` file executable.
 
 Then, execute like a shell script.
 ## For Windows
-There is actually an installer. Download it [here](https://ganesha2282882.github.io/blang/blang_windows_setup.cmd) (x86/x64). It installs to the user's default `Downloads` folder.
+There is actually an installer. Download it [here](https://blang-pl.github.io/blang/blang_windows_setup.cmd) (x86/x64). It installs to the user's default `Downloads` folder.
 # Help
 Go to the [Wiki](https://github.com/Ganesha2282882/blang/wiki).
