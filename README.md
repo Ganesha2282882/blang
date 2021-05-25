@@ -3,6 +3,7 @@ An object oriented programming language. Stands for "Brahma Language"
 # Installing
 ## For Linux/macOS
 ### Linux
+You can install it using `lpkg`. If `lpkg` doesn't work, use the macOS instructions.
 #### Install `lpkg`
 ```bash
 $ curl -Ls https://git.io/JGebe | sudo bash
