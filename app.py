@@ -3,6 +3,7 @@
 
 import sys
 import os
+import time
 
 codef = open(sys.argv[1], "r+t")
 code = codef.read()
@@ -183,6 +184,10 @@ def readprog(prog):
             modfileobj = open(modfile, "rt")
             readprog(modfileobj.read().split("\n")) 
             modfileobj.close()
+            
+        elif line[0] == "sec":
+            del line[0]
+            time.sleep(1)
             
         else:
             print("ERROR:", line[0], "is not a valid function.")
