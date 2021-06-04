@@ -2,3 +2,6 @@
 echo '#!/bin/python3' > blang
 cat app.py >> blang
 chmod +x blang
+echo '#!/bin/python3' > bmit
+cat bmit.py >> bmit
+chmod +x bmit
