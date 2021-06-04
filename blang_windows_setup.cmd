@@ -9,6 +9,8 @@ powershell "expand-archive runtime.zip" > nul
 del runtime.zip
 cd runtime
 powershell "iwr https://raw.githubusercontent.com/Ganesha2282882/blang/main/app.py -OutFile blang.py" > nul
+powershell "iwr https://raw.githubusercontent.com/Ganesha2282882/blang/main/bmit.py -OutFile bmit.py" > nul
+
 cd ..
 ren runtime blang
 echo Installation complete.
