@@ -194,7 +194,12 @@ def readprog(prog):
             del line[0]
             entries = []
             def submit():
-                varlist["gui_junk"] = {"entry": tmptry.get()}
+                try:
+                    varlist["gui_junk"] = {"entry": tmptry.get()}
+                    
+                except NameError:
+                    nothing()
+                    
                 window.destroy()
                 
             if line[0] == "init":
