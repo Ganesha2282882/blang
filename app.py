@@ -216,7 +216,7 @@ def readprog(prog):
                 Button(window, text="Submit", command=submit).pack()
                 
             elif line[0] == "parse":
-                varlist["parsed"] = varlist["gui_junk"][line[0]]
+                varlist["parsed"] = varlist["gui_junk"][line[1]]
                 
             elif line[0] == "end":
                 window.mainloop()
