@@ -4,6 +4,7 @@
 import sys
 import os
 import time
+from tkinter import *
 
 codef = open(sys.argv[1], "r+t")
 code = codef.read()
@@ -188,6 +189,26 @@ def readprog(prog):
         elif line[0] == "sec":
             del line[0]
             time.sleep(1)
+            
+        elif line[0] == "gui":
+            del line[0]
+            entries = []
+            def submit():
+                varlist["gui_junk"] = {"entry": tmptry.get()}
+                
+            if line[0] == "init":
+                window = Tk()
+                window.title("[blang App]")
+            
+            elif line[0] == "text":
+                Label(window, text=line[1]).pack()
+      
+            elif line[0] == "entry":
+                tmptry = Entry(window, width=20)
+                tmptry.pack()
+                
+            elif line[0] == "submit":
+                Button(window, text="Submit", command=submit).pack()
             
         else:
             print("ERROR:", line[0], "is not a valid function.")
