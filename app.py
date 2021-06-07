@@ -203,7 +203,7 @@ def readprog(prog):
                 
             def btnRunner():
                 for x in line:
-                    for num in len(line) - 1:
+                    for num in range(len(line) - 1):
                         if x == "DO":
                             readprog([" ".join(line[num:])])
                             break
@@ -222,7 +222,7 @@ def readprog(prog):
                 
             elif line[0] == "button":
                 for x in line:
-                    for num in len(line) - 1:
+                    for num in range(len(line) - 1):
                         if x == "DO":
                             last = num - 1
                             label = line[:last]
