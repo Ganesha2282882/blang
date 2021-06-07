@@ -195,6 +195,7 @@ def readprog(prog):
             entries = []
             def submit():
                 varlist["gui_junk"] = {"entry": tmptry.get()}
+                window.destroy()
                 
             if line[0] == "init":
                 window = Tk()
@@ -209,6 +210,9 @@ def readprog(prog):
                 
             elif line[0] == "submit":
                 Button(window, text="Submit", command=submit).pack()
+                
+            elif line[0] == "parse":
+                varlist["parsed"] = varlist["gui_junk"][line[0]]
                 
             elif line[0] == "end":
                 window.mainloop()
