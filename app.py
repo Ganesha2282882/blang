@@ -201,14 +201,6 @@ def readprog(prog):
                     
                 window.destroy()
                 
-            def btnRunner():
-                for x in line:
-                    for num in range(len(line) - 1):
-                        if x == "DO":
-                            readprog([" ".join(line[num:])])
-                            break
-                    
-                
             if line[0] == "init":
                 window = Tk()
                 window.title("[blang App]")
@@ -219,16 +211,6 @@ def readprog(prog):
             elif line[0] == "entry":
                 tmptry = Entry(window, width=20)
                 tmptry.pack()
-                
-            elif line[0] == "button":
-                for x in line:
-                    for num in range(len(line) - 1):
-                        if x == "DO":
-                            last = num - 1
-                            label = line[:last]
-                            break
-                        
-                Button(window, text="{}".format(label), command=btnRunner).pack()
                 
             elif line[0] == "submit":
                 Button(window, text="Submit", command=submit).pack()
