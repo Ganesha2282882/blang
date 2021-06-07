@@ -192,7 +192,6 @@ def readprog(prog):
             
         elif line[0] == "gui":
             del line[0]
-            entries = []
             def submit():
                 try:
                     varlist["gui_junk"] = {"entry": tmptry.get()}
@@ -201,6 +200,13 @@ def readprog(prog):
                     nothing()
                     
                 window.destroy()
+                
+            def btnRunner():
+                for x in line, num in enumerate(line):
+                    if x == "DO":
+                        readprog([" ".join(line[num:])])
+                        break
+                    
                 
             if line[0] == "init":
                 window = Tk()
@@ -212,6 +218,15 @@ def readprog(prog):
             elif line[0] == "entry":
                 tmptry = Entry(window, width=20)
                 tmptry.pack()
+                
+            elif line[0] == "button":
+                for x in line, num in enumerate(line):
+                    if x == "DO":
+                        last = num - 1
+                        label = line[:last]
+                        break
+                        
+                Button(window, text="{}".format(label), command=btnRunner).pack()
                 
             elif line[0] == "submit":
                 Button(window, text="Submit", command=submit).pack()
