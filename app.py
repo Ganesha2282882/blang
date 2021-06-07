@@ -202,10 +202,11 @@ def readprog(prog):
                 window.destroy()
                 
             def btnRunner():
-                for x in line, num in enumerate(line):
-                    if x == "DO":
-                        readprog([" ".join(line[num:])])
-                        break
+                for x in line:
+                    for num in len(line) - 1:
+                        if x == "DO":
+                            readprog([" ".join(line[num:])])
+                            break
                     
                 
             if line[0] == "init":
@@ -220,11 +221,12 @@ def readprog(prog):
                 tmptry.pack()
                 
             elif line[0] == "button":
-                for x in line, num in enumerate(line):
-                    if x == "DO":
-                        last = num - 1
-                        label = line[:last]
-                        break
+                for x in line:
+                    for num in len(line) - 1:
+                        if x == "DO":
+                            last = num - 1
+                            label = line[:last]
+                            break
                         
                 Button(window, text="{}".format(label), command=btnRunner).pack()
                 
