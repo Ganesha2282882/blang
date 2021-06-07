@@ -194,7 +194,7 @@ def readprog(prog):
             del line[0]
             def submit():
                 try:
-                    varlist["gui_junk"] = {"entry": tmptry.get()}
+                    varlist[":gui_junk:"] = {"entry": tmptry.get()}
                     
                 except NameError:
                     nothing()
@@ -216,7 +216,7 @@ def readprog(prog):
                 Button(window, text="Submit", command=submit).pack()
                 
             elif line[0] == "parse":
-                varlist["parsed"] = varlist["gui_junk"][line[1]]
+                varlist[":parsed:"] = varlist["gui_junk"][line[1]]
                 
             elif line[0] == "end":
                 window.mainloop()
