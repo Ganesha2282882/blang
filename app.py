@@ -209,6 +209,9 @@ def readprog(prog):
                 
             elif line[0] == "submit":
                 Button(window, text="Submit", command=submit).pack()
+                
+            elif line[0] == "end":
+                window.mainloop()
             
         else:
             print("ERROR:", line[0], "is not a valid function.")
