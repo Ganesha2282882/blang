@@ -16,5 +16,7 @@ $ sudo lpkg -E blang
 To build it, mark the `build1` file executable.
 
 Then, execute like a shell script.
+## Windows NT
+Good luck with that! You probably will need WSL and Xming.
 # Help
 Go to the [Wiki](https://github.com/Ganesha2282882/blang/wiki).
