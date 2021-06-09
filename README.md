@@ -1,5 +1,3 @@
-# DO NOT USE
-This is the old version (pre C) version of blang.
 # blang
 An object oriented programming language. Stands for "Brahma Language".
 # Installing
