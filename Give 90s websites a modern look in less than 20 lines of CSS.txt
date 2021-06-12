@@ -1,0 +1,17 @@
+body {
+	font-family: Tahoma, Ubuntu, Cantarell;
+	background-color: #169f6f;
+	color: white;
+}
+
+pre, code, samp {
+	font-family: Consolas, "Ubuntu Mono", "Source Code Pro";
+}
+
+a {
+	color: lightgray;
+}
+
+img, picture {
+	border-radius: 8px;
+}
