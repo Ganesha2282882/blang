@@ -5,3 +5,6 @@ chmod +x blang
 echo '#!/bin/python3' > bmit
 cat bmit.py >> bmit
 chmod +x bmit
+echo '#!/bin/python3' > brepl
+cat brepl.py >> brepl
+chmod +x brepl
