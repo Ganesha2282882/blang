@@ -5,6 +5,7 @@ import sys
 import os
 import time
 from tkinter import *
+import webbrowser
 
 codef = open(sys.argv[1], "r+t")
 code = codef.read()
@@ -20,7 +21,13 @@ def readprog(prog):
     for line in prog:
         line.replace("\r", r"")
         line = line.split(" ")
-        if line[0] == "say":
+        if line[0] == "help":
+            webbrowser.open_new_tab("https://github.com/blang-pl/blang/wiki/Usage")
+            
+        elif line[0] == "doc":
+            webbrowser.open_new_tab("https://ganeshalovesubuntu-0590.trinket.io/blang#")
+            
+        elif line[0] == "say":
             del line[0]
             if line[0][0] == ":" and line[0][-1] == ":":
                 for x in varlist[":{}:".format(line[0][1:-1])][0:]:
