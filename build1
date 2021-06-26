@@ -1,2 +1,7 @@
-#!/bin/sh
+#!/bin/bash
+shw_warn () {
+    echo -n $(tput bold)$(tput setaf 2) "WARNING:" "$(tput sgr 0)"
+}
+shw_warn
+echo "build1 is considered legacy. Try to use the Makefile instead."
 make
