@@ -20,6 +20,7 @@ if argw[0] == "i":
     open("blang.zip", "wb").write(requests.get("https://github.com/blang-pl/blang/archive/refs/tags/{}.zip".format(argw[1])).content)
     print("Installing blang version {}...".format(argw[1]))
     zipfile.ZipFile("blang.zip", "r").extractall(".bvm")
+    os.remove("blang.zip")
     print("Installed. v/")
 
 elif argw[0] == "s":
