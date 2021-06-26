@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for i in `ls out | xargs`; do
+    rm /usr/local/bin/$i
+done
