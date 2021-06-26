@@ -38,5 +38,5 @@ jobs:
       - name: Run test script
         run: |
           echo "say Never gonna give you up" > a.blang
-          ./blang a.blang
+          out/blang a.blang
           
