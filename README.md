@@ -4,13 +4,19 @@ An object oriented programming language. Stands for "Brahma Language".
 ## For Linux/macOS
 ### Linux
 You can install it using `lpkg`. If `lpkg` doesn't work, run the Makefile.
-#### Install `lpkg`
+#### With `lpkg`
+##### Install `lpkg`
 ```bash
-$ curl -Ls https://git.io/JGebe | sudo bash
+curl -Ls https://git.io/JGebe | sudo bash
 ```
-#### Install blang
+##### Install blang
 ```bash
-$ sudo lpkg -E blang
+sudo lpkg -E blang
+```
+#### With `bvm`
+```bash
+curl -Ls https://git.io/JGebe | sudo bash
+sudo lpkg -E bvm
 ```
 ## Windows NT
 Good luck with that! You will have to drag files.
